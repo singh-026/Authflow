@@ -25,7 +25,7 @@ const SuccessfulOrderScreen = ({navigation}: MyScreenProps) => {
   }, [navigation]);
   const handleBackNav = () => {
     navigation.pop(2);
-    route?.params?.listHandler();
+    route?.params?.listHandler([]);
   };
   return (
     <SafeAreaView style={styles.container}>
